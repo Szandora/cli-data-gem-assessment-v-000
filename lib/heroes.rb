@@ -1,1 +1,3 @@
+require 'Nokogiri'
+
 class Heroes
