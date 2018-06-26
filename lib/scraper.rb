@@ -6,6 +6,8 @@ class Scraper
 
   def get_page
     Nokogiri::HTML(open("https://heroesofthestorm.gamepedia.com/Free_rotation"))
+
+    binding.pry
   end
 
   def get_heroes
