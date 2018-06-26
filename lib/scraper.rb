@@ -1,13 +1,18 @@
-require 'HTTParty'
-require 'Nokogiri'
+require 'nokogiri'
+require 'open-uri'
 
 class Scraper
-  attr_accessor :parse_page
 
-  def initialize
-    doc = HTTParty.get(https://heroesofthestorm.gamepedia.com/Free_rotation)
-    @parse_page ||= Nokogiri::HTML(doc)
+  def get_page
 
+    Nokogiri::HTML(open("https://heroesofthestorm.gamepedia.com/Free_rotation"))
+
+    #doc.css(".post").each do |post|
+      #course = Course.new
+      #course.title = post.css("h2").text
+      #course.schedule = post.css(".date").text
+      #course.description = post.css("p").text
+    #end
   end
 
 end
