@@ -10,8 +10,10 @@ class Scraper
     binding.pry
   end
 
-  def get_heroes
-   self.get_page.css(".hero-tile")
- end
+  #def get_heroes
+   #self.get_page.css(".hero-tile")
+ #end
 
 end
+
+Scraper.new.get_page
